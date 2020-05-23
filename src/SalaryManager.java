@@ -5,7 +5,7 @@ public class SalaryManager {
 	public static void main(String[] args) {
 		
 		SalaryManager sm = new SalaryManager();
-		System.out.println("연봉 2천만원 인 사람의 세후는 " + sm.getMonthlySalary(20000000));
+		System.out.println("yearsalary 2000 " + sm.getMonthlySalary(20000000));
 		
 
 		
@@ -22,10 +22,10 @@ public class SalaryManager {
 		double tax2 = calculateHealthInsureance(monthlySalary);
 		double taxTotal = tax + tax1 + tax2;
 		
-		System.out.println("세금 1 : " + tax);
-		System.out.println("세금 2 : " + tax1);
-		System.out.println("세금 3 : " + tax2);
-		System.out.println("세금 토탈 : " + taxTotal);
+		System.out.println("tax 1 : " + tax);
+		System.out.println("tax 2 : " + tax1);
+		System.out.println("tax 3 : " + tax2);
+		System.out.println("tax total : " + taxTotal);
 
 		monthlySalary -=taxTotal;
 		return monthlySalary;
